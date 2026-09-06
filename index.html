@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homework 7: Interactive DOM Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1 class="title">Homework 7: Interactive DOM Project</h1>
+      <p class="subtitle">an web development class built with vanilla JavaScript</p>
+    </header>
+
+    <section class="panel" aria-label="Class tip">
+      <div class="panel__row">
+        <p id="tip-text" class="tip-text" aria-live="polite">Tap the button for a tip from the trail.</p>
+        <button id="tip-button" type="button" class="btn btn--ghost">Show another tip</button>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Log a sighting">
+      <h2 class="section-heading">Log a sighting</h2>
+
+      <div class="field-row">
+        <label class="field">
+          <span class="field__label">Species</span>
+          <input id="species-input" type="text" placeholder="e.g. Carolina wren" autocomplete="off">
+        </label>
+        <label class="field field--narrow">
+          <span class="field__label">Time</span>
+          <input id="time-input" type="text" placeholder="7:40am" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="meter" aria-hidden="true">
+        <div id="meter-fill" class="meter__fill"></div>
+      </div>
+      <p class="meter__caption">Margin used as you write the species name</p>
+
+      <button id="add-button" type="button" class="btn btn--primary">Add to log</button>
+    </section>
+
+    <section class="panel" aria-label="Today's log">
+      <h2 class="section-heading">Today's log</h2>
+      <ul id="sighting-list" class="sighting-list" aria-live="polite"></ul>
+      <p id="empty-message" class="empty-message">No sightings yet — the page is still blank.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
