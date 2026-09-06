@@ -4,7 +4,7 @@ A small interactive web page built with vanilla HTML, CSS, and JavaScript. It de
 
 ## Live demo
 
-_(add your GitHub Pages link here once deployed)_
+https://ASharlayne.github.io/homework7web-dev/
 
 ## Features
 
